@@ -15,11 +15,12 @@ export default function Main(props) {
                         placeholder="Bottom Text"
                         //onChange={}
                     />
-                <button type="button" onClick={props.handleGetImage}>
-                    Get New Image
-                </button>
-                <button type="button" onClick={()=>alert("Saved")}> Save Meme</button> 
-                <button type="button">Switch Text Position</button> 
+                    <button type="button" onClick={props.handleGetImage}>
+                         Get Random Image
+                    </button>
+                    <button type="button" onClick={()=>alert("Saved")}> Save Meme</button> 
+                    <button type="button">Switch Text Position</button> 
+                    {/*<button type="button" className="figma">Button</button>*/}
                 </form>
                 
                 <div className="imageContainer">
@@ -27,7 +28,13 @@ export default function Main(props) {
                         src={props.memeImage}
                         className="memeImage"
                     />
-                                      
+                    <h3 className="top">
+                        Top Text
+                    </h3>
+                    <h3 className="bottom">
+                        Bottom Text
+                    </h3>
+                  
                 </div>
             </div>
         </div>
