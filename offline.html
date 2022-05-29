@@ -11,16 +11,6 @@
 			This is the sample offline page where you can customize it laterly, but for now vola, I would say you to
 			connect to the internet
 		</h2>
-        <!-- PWA Script -->
-		<script>
-			if ('serviceWorker' in navigator) {
-				window.addEventListener('load', () => {
-					navigator.serviceWorker
-						.register('./serviceWorker.js')
-						.then((reg) => console.log('Success: ', reg.scope))
-						.catch((err) => console.log('Failure: ', err));
-				});
-			}
-        </script>
+       
 	</body>
 </html>
